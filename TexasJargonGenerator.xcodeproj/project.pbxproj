@@ -51,6 +51,7 @@
 		AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexasJargonGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE99C840F3BB2D2C64E106E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
