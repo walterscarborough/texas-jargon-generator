@@ -1,15 +1,6 @@
-//
-//  TexasJargonGeneratorUITests.swift
-//  TexasJargonGeneratorUITests
-//
-//  Created by pivotal on 1/27/20.
-//  Copyright © 2020 pivotal. All rights reserved.
-//
-
 import XCTest
 
 class TexasJargonGeneratorUITests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 

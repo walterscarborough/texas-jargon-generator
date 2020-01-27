@@ -1,16 +1,7 @@
-//
-//  TexasJargonGeneratorTests.swift
-//  TexasJargonGeneratorTests
-//
-//  Created by pivotal on 1/27/20.
-//  Copyright © 2020 pivotal. All rights reserved.
-//
-
-import XCTest
 @testable import TexasJargonGenerator
+import XCTest
 
 class TexasJargonGeneratorTests: XCTestCase {
-
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -26,9 +17,8 @@ class TexasJargonGeneratorTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

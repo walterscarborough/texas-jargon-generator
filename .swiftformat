@@ -1,0 +1,6 @@
+--header strip
+--maxwidth 120
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--disable redundantReturn

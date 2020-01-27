@@ -13,30 +13,20 @@ function go_to_project_root_directory() {
     cd "$script_dir/.."
 }
 
-function run_bash_linter() {
-    shellcheck scripts/*.sh
-}
-
-function run_swiftlint() {
-    mint run swiftlint
-}
-
-function check_swiftformat_warnings() {
-  mint run swiftformat swiftformat --lint --verbose .
+function run_swift_formatter() {
+    mint run swiftformat swiftformat --verbose .
 }
 
 function display_success_message() {
     local -r green_color_code='\033[1;32m'
     local -r default_color_code='\033[00m'
-    echo -e "${green_color_code}\\nLinters ran successfully 🧹 ${default_color_code} \\n"
+    echo -e "${green_color_code}\\nFormatters ran successfully 🧼 ${default_color_code} \\n"
 }
 
 function main() {
     set_bash_error_handling
     go_to_project_root_directory
-    run_bash_linter
-    run_swiftlint
-    check_swiftformat_warnings
+    run_swift_formatter
     display_success_message
 }
 
