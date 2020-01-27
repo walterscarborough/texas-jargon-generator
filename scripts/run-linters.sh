@@ -13,6 +13,18 @@ function go_to_project_root_directory() {
     cd "$script_dir/.."
 }
 
+function verify_linters_are_installed() {
+    if ! command -v shellcheck >/dev/null; then
+        echo "✋ warning: shellcheck not installed; please run 'brew install shellcheck'"
+        exit 1
+    fi
+
+    if ! command -v mint >/dev/null; then
+        echo "✋ warning: mint not installed; please run 'brew install mint'"
+        exit 1
+    fi
+}
+
 function run_bash_linter() {
     shellcheck scripts/*.sh
 }
@@ -34,6 +46,7 @@ function display_success_message() {
 function main() {
     set_bash_error_handling
     go_to_project_root_directory
+    verify_linters_are_installed
     run_bash_linter
     run_swiftlint
     check_swiftformat_warnings
