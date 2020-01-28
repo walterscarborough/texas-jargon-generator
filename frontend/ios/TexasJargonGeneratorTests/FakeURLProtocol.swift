@@ -42,6 +42,14 @@ import Foundation
     override func stopLoading() {
         // No op
     }
+}
+
+extension FakeURLProtocol {
+    class func resetState() {
+        FakeURLProtocol.testURLs = [:]
+        FakeURLProtocol.error = nil
+        FakeURLProtocol.response = nil
+    }
 
     class func createURLSession() -> URLSession {
         let urlSessionConfig = URLSessionConfiguration.ephemeral

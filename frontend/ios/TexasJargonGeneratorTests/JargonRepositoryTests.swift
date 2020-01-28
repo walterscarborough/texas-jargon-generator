@@ -3,11 +3,12 @@ import XCTest
 
 @testable import TexasJargonGenerator
 
-class JargonRepositoryTest: XCTestCase {
+class JargonRepositoryTests: XCTestCase {
     var subscriberSet: Set<AnyCancellable>?
 
     override func setUp() {
         subscriberSet = []
+        FakeURLProtocol.resetState()
     }
 
     func testFetchJargonReturnsExpectedJargon() {

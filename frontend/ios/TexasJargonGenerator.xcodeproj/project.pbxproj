@@ -17,10 +17,11 @@
 		AE3C148723DF4F500066FE31 /* TexasJargonGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C148623DF4F500066FE31 /* TexasJargonGeneratorTests.swift */; };
 		AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */; };
 		AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */; };
-		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */; };
+		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */; };
 		AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
 		AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF123E097CB00D45FE4 /* HTTPError.swift */; };
 		AE87FBF423E09B1500D45FE4 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */; };
+		AE87FBF623E0C0E800D45FE4 /* FakeURLProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +58,11 @@
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
-		AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepositoryTest.swift; sourceTree = "<group>"; };
+		AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepositoryTests.swift; sourceTree = "<group>"; };
 		AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jargon.swift; sourceTree = "<group>"; };
 		AE87FBF123E097CB00D45FE4 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
+		AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocolTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +141,9 @@
 			children = (
 				AE3C148623DF4F500066FE31 /* TexasJargonGeneratorTests.swift */,
 				AE3C148823DF4F500066FE31 /* Info.plist */,
-				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */,
+				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */,
 				AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */,
+				AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */,
 			);
 			path = TexasJargonGeneratorTests;
 			sourceTree = "<group>";
@@ -299,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */,
+				AE87FBF623E0C0E800D45FE4 /* FakeURLProtocolTests.swift in Sources */,
+				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */,
 				AE87FBF423E09B1500D45FE4 /* FakeURLProtocol.swift in Sources */,
 				AE3C148723DF4F500066FE31 /* TexasJargonGeneratorTests.swift in Sources */,
 			);
