@@ -16,6 +16,9 @@
 		AE3C147C23DF4F500066FE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */; };
 		AE3C148723DF4F500066FE31 /* TexasJargonGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C148623DF4F500066FE31 /* TexasJargonGeneratorTests.swift */; };
 		AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */; };
+		AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */; };
+		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */; };
+		AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,9 @@
 		AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexasJargonGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE99C840F3BB2D2C64E106E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
+		AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepositoryTest.swift; sourceTree = "<group>"; };
+		AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jargon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 				AE3C147D23DF4F500066FE31 /* Info.plist */,
 				AE3C147023DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld */,
 				AE3C147723DF4F500066FE31 /* Preview Content */,
+				AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */,
+				AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */,
 			);
 			path = TexasJargonGenerator;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			children = (
 				AE3C148623DF4F500066FE31 /* TexasJargonGeneratorTests.swift */,
 				AE3C148823DF4F500066FE31 /* Info.plist */,
+				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */,
 			);
 			path = TexasJargonGeneratorTests;
 			sourceTree = "<group>";
@@ -272,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */,
+				AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */,
 				AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */,
 				AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */,
+				AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */,
 				AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */,
 				AE3C148723DF4F500066FE31 /* TexasJargonGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
