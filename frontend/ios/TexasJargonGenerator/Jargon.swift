@@ -1,6 +1,6 @@
 import Foundation
 
-struct Jargon: Decodable, Equatable {
+struct Jargon: Codable, Equatable {
     let phrase: String
 
     static func == (lhs: Jargon, rhs: Jargon) -> Bool {

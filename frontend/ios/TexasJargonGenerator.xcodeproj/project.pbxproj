@@ -19,6 +19,8 @@
 		AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */; };
 		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */; };
 		AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
+		AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF123E097CB00D45FE4 /* HTTPError.swift */; };
+		AE87FBF423E09B1500D45FE4 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
 		AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepositoryTest.swift; sourceTree = "<group>"; };
 		AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jargon.swift; sourceTree = "<group>"; };
+		AE87FBF123E097CB00D45FE4 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				AE3C147723DF4F500066FE31 /* Preview Content */,
 				AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */,
 				AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */,
+				AE87FBF123E097CB00D45FE4 /* HTTPError.swift */,
 			);
 			path = TexasJargonGenerator;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				AE3C148623DF4F500066FE31 /* TexasJargonGeneratorTests.swift */,
 				AE3C148823DF4F500066FE31 /* Info.plist */,
 				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTest.swift */,
+				AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */,
 			);
 			path = TexasJargonGeneratorTests;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */,
 				AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */,
 				AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */,
+				AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */,
 				AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */,
 				AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */,
 				AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */,
@@ -293,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTest.swift in Sources */,
+				AE87FBF423E09B1500D45FE4 /* FakeURLProtocol.swift in Sources */,
 				AE3C148723DF4F500066FE31 /* TexasJargonGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

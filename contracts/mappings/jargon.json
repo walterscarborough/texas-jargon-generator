@@ -1,13 +1,15 @@
 {
-    "request": {
-        "method": "GET",
-        "url": "/jargon"
+  "request": {
+    "method": "GET",
+    "url": "/jargon"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "phrase": "dang"
     },
-    "response": {
-        "status": 200,
-        "jsonBody": {"phrase": "dang"},
-        "headers": {
-            "Content-Type": "application/json"
-        }
+    "headers": {
+      "Content-Type": "application/json"
     }
+  }
 }
