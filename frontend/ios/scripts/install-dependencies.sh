@@ -13,30 +13,30 @@ function go_to_project_ios_directory() {
   cd "$script_dir/.."
 }
 
-function run_bash_linter() {
-  shellcheck scripts/*.sh
+function install_missing_brew_dependencies() {
+  brew install shellcheck mint
 }
 
-function run_swiftlint() {
-  mint run swiftlint
+function install_missing_mint_dependencies() {
+  mint bootstrap
 }
 
-function check_swiftformat_warnings() {
-  mint run swiftformat swiftformat --lint --verbose .
+function install_missing_ruby_dependencies() {
+  bundle install
 }
 
 function display_success_message() {
   local -r green_color_code='\033[1;32m'
   local -r default_color_code='\033[00m'
-  echo -e "${green_color_code}\\nLinters ran successfully 🧹 ${default_color_code} \\n"
+  echo -e "${green_color_code}\\nDependencies installed successfully 💾 ${default_color_code} \\n"
 }
 
 function main() {
   set_bash_error_handling
   go_to_project_ios_directory
-  run_bash_linter
-  run_swiftlint
-  check_swiftformat_warnings
+  install_missing_brew_dependencies
+  install_missing_mint_dependencies
+  install_missing_ruby_dependencies
   display_success_message
 }
 
