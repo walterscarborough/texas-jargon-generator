@@ -47,7 +47,11 @@ class JargonRepositoryTests: XCTestCase {
         let expectedJargon = Jargon(phrase: "gosh darn")
 
         let someURL = URL(string: "http://localhost:8080/someNonexistentEndpoint")!
+
+        // swiftlint:disable force_try
         FakeURLProtocol.testURLs = [someURL: try! JSONEncoder().encode(expectedJargon)]
+        // swiftlint:enable force_try
+
         FakeURLProtocol.response = HTTPURLResponse(
             url: someURL,
             statusCode: 200,
@@ -85,7 +89,11 @@ class JargonRepositoryTests: XCTestCase {
         let phrase = Jargon(phrase: "gosh darn")
 
         let someURL = URL(string: "http://localhost:8080/someNonexistentEndpoint")!
+
+        // swiftlint:disable force_try
         FakeURLProtocol.testURLs = [someURL: try! JSONEncoder().encode(phrase)]
+        // swiftlint:enable force_try
+
         FakeURLProtocol.response = HTTPURLResponse(
             url: someURL,
             statusCode: 400,
@@ -106,11 +114,11 @@ class JargonRepositoryTests: XCTestCase {
                     expectationFinished.fulfill()
                 }
                 default: do {
-                    XCTFail("should fail for specific error")
+                    XCTFail()
                 }
                 }
             }, receiveValue: { _ in
-                XCTFail("This test should have failed for a bad HTTP status code")
+                XCTFail()
             }
         ).store(in: &subscriberSet!)
 
@@ -142,7 +150,7 @@ class JargonRepositoryTests: XCTestCase {
                     expectationFinished.fulfill()
                 }
                 default: do {
-                    XCTFail("should fail for specific error")
+                    XCTFail()
                 }
                 }
             }, receiveValue: { _ in

@@ -36,6 +36,7 @@ function main() {
   go_to_project_ios_directory
   run_linters
   run_tests
+  push_code
   display_success_message
 }
 

@@ -1,6 +1,12 @@
 line_length:
   ignores_comments: true
 
+trailing_comma:
+  mandatory_comma: true
+
+disabled_rules:
+  - xctfail_message
+
 excluded:
     - Carthage
 reporter: "emoji"
