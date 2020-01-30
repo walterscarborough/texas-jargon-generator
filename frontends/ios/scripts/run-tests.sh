@@ -22,16 +22,17 @@ function go_to_project_ios_directory() {
 function start_wiremock_if_not_running() {
   if [[ ! $(lsof -i :8080) ]]; then
     echo "Wiremock not running - starting now"
+    pushd contracts
+      java -jar wiremock-standalone.jar --root-dir . &
+      WIREMOCK_PID=$!
 
-    java -jar wiremock-standalone-2.25.1.jar --root-dir contracts &
-    WIREMOCK_PID=$!
-
-    sleep 1
+      sleep 1
+    popd
   fi
 }
 
 function run_tests() {
-  pushd frontend/ios
+  pushd frontends/ios
     xcodebuild clean test \
       -project TexasJargonGenerator.xcodeproj \
       -scheme TexasJargonGenerator \
