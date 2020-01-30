@@ -15,7 +15,13 @@
 		AE3C147923DF4F500066FE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147823DF4F500066FE31 /* Preview Assets.xcassets */; };
 		AE3C147C23DF4F500066FE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */; };
 		AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */; };
-		AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */; };
+		AE83362623E22FA400E4B0B0 /* JargonViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */; };
+		AE83362823E232C700E4B0B0 /* JargonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362723E232C700E4B0B0 /* JargonViewController.swift */; };
+		AE83362A23E241FA00E4B0B0 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362923E241FA00E4B0B0 /* JargonRepository.swift */; };
+		AE83362C23E2427300E4B0B0 /* JargonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362B23E2427300E4B0B0 /* JargonView.swift */; };
+		AE83362E23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362D23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift */; };
+		AE83363023E369C800E4B0B0 /* StubJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */; };
+		AE87FBEC23DF9E4400D45FE4 /* DefaultJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* DefaultJargonRepository.swift */; };
 		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */; };
 		AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
 		AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF123E097CB00D45FE4 /* HTTPError.swift */; };
@@ -55,7 +61,13 @@
 		AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexasJargonGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
+		AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonViewControllerTests.swift; sourceTree = "<group>"; };
+		AE83362723E232C700E4B0B0 /* JargonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonViewController.swift; sourceTree = "<group>"; };
+		AE83362923E241FA00E4B0B0 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
+		AE83362B23E2427300E4B0B0 /* JargonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonView.swift; sourceTree = "<group>"; };
+		AE83362D23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+TranslatesAutoresizingMask.swift"; sourceTree = "<group>"; };
+		AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubJargonRepository.swift; sourceTree = "<group>"; };
+		AE87FBEB23DF9E4400D45FE4 /* DefaultJargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJargonRepository.swift; sourceTree = "<group>"; };
 		AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepositoryTests.swift; sourceTree = "<group>"; };
 		AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jargon.swift; sourceTree = "<group>"; };
 		AE87FBF123E097CB00D45FE4 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
@@ -120,9 +132,13 @@
 				AE3C147D23DF4F500066FE31 /* Info.plist */,
 				AE3C147023DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld */,
 				AE3C147723DF4F500066FE31 /* Preview Content */,
-				AE87FBEB23DF9E4400D45FE4 /* JargonRepository.swift */,
+				AE87FBEB23DF9E4400D45FE4 /* DefaultJargonRepository.swift */,
+				AE83362923E241FA00E4B0B0 /* JargonRepository.swift */,
 				AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */,
 				AE87FBF123E097CB00D45FE4 /* HTTPError.swift */,
+				AE83362723E232C700E4B0B0 /* JargonViewController.swift */,
+				AE83362B23E2427300E4B0B0 /* JargonView.swift */,
+				AE83362D23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift */,
 			);
 			path = TexasJargonGenerator;
 			sourceTree = "<group>";
@@ -142,6 +158,8 @@
 				AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */,
 				AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */,
 				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */,
+				AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */,
+				AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */,
 			);
 			path = TexasJargonGeneratorTests;
 			sourceTree = "<group>";
@@ -295,11 +313,15 @@
 			files = (
 				AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */,
 				AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */,
+				AE83362E23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift in Sources */,
 				AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */,
 				AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */,
 				AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */,
-				AE87FBEC23DF9E4400D45FE4 /* JargonRepository.swift in Sources */,
+				AE83362823E232C700E4B0B0 /* JargonViewController.swift in Sources */,
+				AE83362A23E241FA00E4B0B0 /* JargonRepository.swift in Sources */,
+				AE87FBEC23DF9E4400D45FE4 /* DefaultJargonRepository.swift in Sources */,
 				AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */,
+				AE83362C23E2427300E4B0B0 /* JargonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE87FC1823E0D0C800D45FE4 /* FakeURLProtocolTests.swift in Sources */,
+				AE83363023E369C800E4B0B0 /* StubJargonRepository.swift in Sources */,
+				AE83362623E22FA400E4B0B0 /* JargonViewControllerTests.swift in Sources */,
 				AE87FC1923E0D0C800D45FE4 /* FakeURLProtocol.swift in Sources */,
 				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */,
 			);

@@ -14,9 +14,9 @@ class JargonRepositoryTests: XCTestCase {
     func testFetchJargonReturnsExpectedJargon() {
         let expectationFinished = expectation(description: "finished")
 
-        let jargonRepository = JargonRepository()
+        let jargonRepository = DefaultJargonRepository(baseUrl: "http://localhost:8080")
 
-        let subscriber = jargonRepository.fetchJargon(url: URL(string: "http://localhost:8080/jargon")!)
+        let subscriber = jargonRepository.fetchJargon()
 
         subscriber.sink(
             receiveCompletion: { result in
@@ -46,7 +46,7 @@ class JargonRepositoryTests: XCTestCase {
 
         let expectedJargon = Jargon(phrase: "gosh darn")
 
-        let someURL = URL(string: "http://localhost:8080/someNonexistentEndpoint")!
+        let someURL = URL(string: "http://localhost:7777/jargon")!
 
         // swiftlint:disable force_try
         FakeURLProtocol.testURLs = [someURL: try! JSONEncoder().encode(expectedJargon)]
@@ -60,9 +60,9 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = JargonRepository(urlSession: urlSession)
+        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
-        let subscriber = jargonRepository.fetchJargon(url: someURL)
+        let subscriber = jargonRepository.fetchJargon()
 
         subscriber.sink(
             receiveCompletion: { result in
@@ -88,7 +88,7 @@ class JargonRepositoryTests: XCTestCase {
 
         let phrase = Jargon(phrase: "gosh darn")
 
-        let someURL = URL(string: "http://localhost:8080/someNonexistentEndpoint")!
+        let someURL = URL(string: "http://localhost:7777/jargon")!
 
         // swiftlint:disable force_try
         FakeURLProtocol.testURLs = [someURL: try! JSONEncoder().encode(phrase)]
@@ -102,9 +102,9 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = JargonRepository(urlSession: urlSession)
+        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
-        let subscriber = jargonRepository.fetchJargon(url: someURL)
+        let subscriber = jargonRepository.fetchJargon()
 
         subscriber.sink(
             receiveCompletion: { result in
@@ -128,7 +128,7 @@ class JargonRepositoryTests: XCTestCase {
     func testFetchJargonFailsForBadData() {
         let expectationFinished = expectation(description: "finished")
 
-        let someURL = URL(string: "http://localhost:8080/someNonexistentEndpoint")!
+        let someURL = URL(string: "http://localhost:7777/jargon")!
         FakeURLProtocol.testURLs = [someURL: "yolo".data(using: .unicode)!]
         FakeURLProtocol.response = HTTPURLResponse(
             url: someURL,
@@ -138,9 +138,9 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = JargonRepository(urlSession: urlSession)
+        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
-        let subscriber = jargonRepository.fetchJargon(url: someURL)
+        let subscriber = jargonRepository.fetchJargon()
 
         subscriber.sink(
             receiveCompletion: { result in
