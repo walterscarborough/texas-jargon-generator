@@ -7,7 +7,6 @@ function set_bash_error_handling() {
   set -o errtrace
   set -o nounset
   set -o pipefail
-  set -x
 }
 
 function go_to_top_project_directory() {
