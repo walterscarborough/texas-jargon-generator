@@ -1,7 +1,3 @@
-//
-// Created by pivotal on 1/30/20.
-//
-
 #include "random_jargon_generator.h"
 #include "gtest/gtest.h"
 
