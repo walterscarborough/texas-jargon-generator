@@ -13,6 +13,10 @@ function go_to_top_project_directory() {
   cd "$script_dir/.."
 }
 
+function run_random_jargon_generator_ship_it() {
+  ./common/random-jargon-generator/scripts/ship-it.sh
+}
+
 function run_ios_ship_it() {
   ./frontends/ios/scripts/ship-it.sh
 }
@@ -30,6 +34,7 @@ function display_success_message() {
 function main() {
   set_bash_error_handling
   go_to_top_project_directory
+  run_random_jargon_generator_ship_it
   run_ios_ship_it
   push_code
   display_success_message
