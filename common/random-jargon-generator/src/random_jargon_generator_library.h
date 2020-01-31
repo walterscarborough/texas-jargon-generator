@@ -3,6 +3,6 @@
 
 #include <string>
 
-std::string generate_phrase();
+auto generate_phrase() -> std::string;
 
-#endif //JARGON_GENERATOR_RANDOM_JARGON_GENERATOR_LIBRARY_H
+#endif // JARGON_GENERATOR_RANDOM_JARGON_GENERATOR_LIBRARY_H

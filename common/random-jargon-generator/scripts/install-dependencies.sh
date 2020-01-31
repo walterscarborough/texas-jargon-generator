@@ -14,7 +14,10 @@ function go_to_project_cplusplus_directory() {
 }
 
 function install_missing_brew_dependencies() {
-  brew install conan
+  brew install conan llvm
+
+  ln -s "$(brew --prefix llvm)/bin/clang-tidy" "/usr/local/bin/clang-tidy"
+  ln -s "$(brew --prefix llvm)/bin/clang-format" "/usr/local/bin/clang-format"
 }
 
 function install_missing_conan_dependencies() {
