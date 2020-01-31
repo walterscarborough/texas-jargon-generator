@@ -30,8 +30,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          }
          */
 
-        let jargonRepository = DefaultJargonRepository()
-        let jargonViewController = JargonViewController(jargonRepository: jargonRepository)
+        let remoteJargonRepository = RemoteJargonRepository()
+        let localJargonRepository = LocalJargonRepository()
+        let jargonViewController = JargonViewController(
+            remoteJargonRepository: remoteJargonRepository,
+            localJargonRepository: localJargonRepository
+        )
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

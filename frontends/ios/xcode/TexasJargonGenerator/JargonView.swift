@@ -2,10 +2,12 @@ import UIKit
 
 class JargonView: UIView {
     let remotePhraseButton = UIButton(type: .roundedRect)
+    let localPhraseButton = UIButton(type: .roundedRect)
     let phraseLabel = UILabel(frame: .zero)
-    enum Tags {
-        static let remotePhraseButton = 1
-        static let phraseLabel = 2
+    enum Tags: Int {
+        case remotePhraseButton = 1
+        case localPhraseButton
+        case phraseLabel
     }
 
     private let phraseStack = UIStackView(frame: .zero)
@@ -28,11 +30,13 @@ class JargonView: UIView {
 
         phraseStack.addArrangedSubview(phraseLabel)
         phraseStack.addArrangedSubview(remotePhraseButton)
+        phraseStack.addArrangedSubview(localPhraseButton)
     }
 
     private func tagSubviews() {
-        remotePhraseButton.tag = Tags.remotePhraseButton
-        phraseLabel.tag = Tags.phraseLabel
+        remotePhraseButton.tag = Tags.remotePhraseButton.rawValue
+        localPhraseButton.tag = Tags.localPhraseButton.rawValue
+        phraseLabel.tag = Tags.phraseLabel.rawValue
     }
 
     private func styleSubviews() {
@@ -40,9 +44,12 @@ class JargonView: UIView {
         phraseStack.distribution = .fillEqually
 
         remotePhraseButton.backgroundColor = UIColor.red
+        localPhraseButton.backgroundColor = UIColor.purple
         phraseLabel.backgroundColor = UIColor.green
         phraseStack.layer.backgroundColor = UIColor.blue.cgColor
 
+        localPhraseButton.setTitle("Get Local Phrase", for: .normal)
+        remotePhraseButton.setTitle("Get Remote Phrase", for: .normal)
         phraseLabel.text = "Yolo!"
 
         backgroundColor = UIColor.yellow

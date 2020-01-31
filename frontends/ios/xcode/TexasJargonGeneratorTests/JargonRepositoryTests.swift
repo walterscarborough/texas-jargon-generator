@@ -14,7 +14,7 @@ class JargonRepositoryTests: XCTestCase {
     func testFetchJargonReturnsExpectedJargon() {
         let expectationFinished = expectation(description: "finished")
 
-        let jargonRepository = DefaultJargonRepository(baseUrl: "http://localhost:8080")
+        let jargonRepository = RemoteJargonRepository(baseUrl: "http://localhost:8080")
 
         let subscriber = jargonRepository.fetchJargon()
 
@@ -60,7 +60,7 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
+        let jargonRepository = RemoteJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
         let subscriber = jargonRepository.fetchJargon()
 
@@ -102,7 +102,7 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
+        let jargonRepository = RemoteJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
         let subscriber = jargonRepository.fetchJargon()
 
@@ -138,7 +138,7 @@ class JargonRepositoryTests: XCTestCase {
         )
         let urlSession = FakeURLProtocol.createURLSession()
 
-        let jargonRepository = DefaultJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
+        let jargonRepository = RemoteJargonRepository(urlSession: urlSession, baseUrl: "http://localhost:7777")
 
         let subscriber = jargonRepository.fetchJargon()
 

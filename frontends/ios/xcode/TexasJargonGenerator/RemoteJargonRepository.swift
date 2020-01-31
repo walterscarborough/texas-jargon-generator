@@ -1,7 +1,7 @@
 import Combine
 import Foundation
 
-struct DefaultJargonRepository: JargonRepository {
+struct RemoteJargonRepository: JargonRepository {
     let urlSession: URLSession
     let baseUrl: String
 
