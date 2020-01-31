@@ -13,6 +13,10 @@ function go_to_project_cplusplus_directory() {
   cd "$script_dir/.."
 }
 
+function run_linters() {
+  ./scripts/run-linters.sh
+}
+
 function run_tests() {
   ./scripts/run-tests.sh
 }
@@ -26,6 +30,7 @@ function display_success_message() {
 function main() {
   set_bash_error_handling
   go_to_project_cplusplus_directory
+  run_linters
   run_tests
   display_success_message
 }
