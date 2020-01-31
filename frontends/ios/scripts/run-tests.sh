@@ -13,7 +13,7 @@ function set_bash_exit_handling() {
   trap cleanup EXIT
 }
 
-function go_to_project_ios_directory() {
+function go_to_project_top_directory() {
   local -r script_dir=$(dirname "${BASH_SOURCE[0]}")
 
   cd "$script_dir/../../../"
@@ -32,7 +32,7 @@ function start_wiremock_if_not_running() {
 }
 
 function run_tests() {
-  pushd frontends/ios
+  pushd frontends/ios/xcode
     xcodebuild clean test \
       -project TexasJargonGenerator.xcodeproj \
       -scheme TexasJargonGenerator \
@@ -68,7 +68,7 @@ function cleanup() {
 function main() {
   set_bash_error_handling
   set_bash_exit_handling
-  go_to_project_ios_directory
+  go_to_project_top_directory
   start_wiremock_if_not_running
   run_tests
 }

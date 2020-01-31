@@ -18,11 +18,15 @@ function run_bash_linter() {
 }
 
 function run_swiftlint() {
-  mint run swiftlint
+  pushd xcode
+    mint run swiftlint
+  popd
 }
 
 function check_swiftformat_warnings() {
-  mint run swiftformat swiftformat --lint --verbose .
+  pushd xcode
+    mint run swiftformat swiftformat --lint --verbose .
+  popd
 }
 
 function display_success_message() {

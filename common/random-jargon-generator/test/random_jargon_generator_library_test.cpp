@@ -1,4 +1,4 @@
-#include "random_jargon_generator.h"
+#include "random_jargon_generator_library.h"
 #include "gtest/gtest.h"
 
 TEST(random_jargon_generator, generate_phrase) {

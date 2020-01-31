@@ -19,7 +19,7 @@ class JargonViewController: UIViewController {
     override func loadView() {
         view = jargonView
 
-        jargonView.phraseButton.addTarget(
+        jargonView.remotePhraseButton.addTarget(
             self,
             action: #selector(phraseButtonTapped),
             for: .touchUpInside

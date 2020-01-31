@@ -14,7 +14,9 @@ function go_to_project_ios_directory() {
 }
 
 function run_swift_formatter() {
-  mint run swiftformat swiftformat --verbose .
+  pushd xcode
+    mint run swiftformat swiftformat --verbose .
+  popd
 }
 
 function display_success_message() {

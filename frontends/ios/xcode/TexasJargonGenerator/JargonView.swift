@@ -1,10 +1,10 @@
 import UIKit
 
 class JargonView: UIView {
-    let phraseButton = UIButton(type: .roundedRect)
+    let remotePhraseButton = UIButton(type: .roundedRect)
     let phraseLabel = UILabel(frame: .zero)
     enum Tags {
-        static let phraseButton = 1
+        static let remotePhraseButton = 1
         static let phraseLabel = 2
     }
 
@@ -27,11 +27,11 @@ class JargonView: UIView {
         addSubview(phraseStack)
 
         phraseStack.addArrangedSubview(phraseLabel)
-        phraseStack.addArrangedSubview(phraseButton)
+        phraseStack.addArrangedSubview(remotePhraseButton)
     }
 
     private func tagSubviews() {
-        phraseButton.tag = Tags.phraseButton
+        remotePhraseButton.tag = Tags.remotePhraseButton
         phraseLabel.tag = Tags.phraseLabel
     }
 
@@ -39,7 +39,7 @@ class JargonView: UIView {
         phraseStack.axis = .vertical
         phraseStack.distribution = .fillEqually
 
-        phraseButton.backgroundColor = UIColor.red
+        remotePhraseButton.backgroundColor = UIColor.red
         phraseLabel.backgroundColor = UIColor.green
         phraseStack.layer.backgroundColor = UIColor.blue.cgColor
 
