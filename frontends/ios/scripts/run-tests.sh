@@ -55,7 +55,7 @@ function cleanup() {
   function display_success_message() {
     local -r green_color_code='\033[1;32m'
     local -r default_color_code='\033[00m'
-    echo -e "${green_color_code}\\nFormatters ran successfully 🧼 ${default_color_code} \\n"
+    echo -e "${green_color_code}\\nTests ran successfully 🧪 ${default_color_code} \\n"
   }
 
   stop_wiremock_if_started_by_test_suite
