@@ -1,5 +1,6 @@
 import XCTest
 
+@testable import JargonRepositories
 @testable import TexasJargonGenerator
 
 class JargonViewControllerTests: XCTestCase {

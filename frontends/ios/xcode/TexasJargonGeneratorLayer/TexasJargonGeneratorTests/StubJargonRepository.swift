@@ -1,6 +1,6 @@
 import Combine
 import Foundation
-@testable import TexasJargonGenerator
+@testable import JargonRepositories
 
 class StubJargonRepository: JargonRepository {
     var fetchJargonReturn: Jargon?

@@ -15,12 +15,25 @@
 		AE3C147923DF4F500066FE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147823DF4F500066FE31 /* Preview Assets.xcassets */; };
 		AE3C147C23DF4F500066FE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */; };
 		AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */; };
+		AE587C8123E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */; };
+		AE587C8A23E4E55C00C7ED83 /* JargonRepositories.h in Headers */ = {isa = PBXBuildFile; fileRef = AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE587C8D23E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */; };
+		AE587C8E23E4E55C00C7ED83 /* JargonRepositories.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE587C9523E4E59100C7ED83 /* RemoteJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* RemoteJargonRepository.swift */; };
+		AE587C9623E4E59100C7ED83 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
+		AE587C9723E4E59100C7ED83 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362923E241FA00E4B0B0 /* JargonRepository.swift */; };
+		AE587C9823E4E59100C7ED83 /* LocalJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8336C123E4B14700E4B0B0 /* LocalJargonRepository.swift */; };
+		AE587C9923E4E59100C7ED83 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF123E097CB00D45FE4 /* HTTPError.swift */; };
+		AE587C9B23E4E5A400C7ED83 /* FakeURLProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */; };
+		AE587C9C23E4E5A400C7ED83 /* JargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */; };
+		AE587C9D23E4E5A400C7ED83 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */; };
+		AE587C9E23E4E5A400C7ED83 /* LocalJargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */; };
+		AE587C9F23E4E6CB00C7ED83 /* RandomJargon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE83369723E48CC700E4B0B0 /* RandomJargon.framework */; };
+		AE587CA023E4E76B00C7ED83 /* StubJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */; };
 		AE83362623E22FA400E4B0B0 /* JargonViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */; };
 		AE83362823E232C700E4B0B0 /* JargonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362723E232C700E4B0B0 /* JargonViewController.swift */; };
-		AE83362A23E241FA00E4B0B0 /* JargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362923E241FA00E4B0B0 /* JargonRepository.swift */; };
 		AE83362C23E2427300E4B0B0 /* JargonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362B23E2427300E4B0B0 /* JargonView.swift */; };
 		AE83362E23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362D23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift */; };
-		AE83363023E369C800E4B0B0 /* StubJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */; };
 		AE8336A023E48CC700E4B0B0 /* RandomJargon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE83369723E48CC700E4B0B0 /* RandomJargon.framework */; };
 		AE8336A723E48CC700E4B0B0 /* RandomJargonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8336A623E48CC700E4B0B0 /* RandomJargonTests.swift */; };
 		AE8336A923E48CC700E4B0B0 /* RandomJargon.h in Headers */ = {isa = PBXBuildFile; fileRef = AE83369923E48CC700E4B0B0 /* RandomJargon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,14 +43,6 @@
 		AE8336BA23E48D6300E4B0B0 /* random_jargon_generator_library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE8336B823E48D6300E4B0B0 /* random_jargon_generator_library.cpp */; };
 		AE8336BD23E48D9000E4B0B0 /* RandomJargonGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE8336BB23E48D9000E4B0B0 /* RandomJargonGenerator.mm */; };
 		AE8336BE23E48D9000E4B0B0 /* RandomJargonGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8336BC23E48D9000E4B0B0 /* RandomJargonGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE8336C023E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */; };
-		AE8336C223E4B14700E4B0B0 /* LocalJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8336C123E4B14700E4B0B0 /* LocalJargonRepository.swift */; };
-		AE87FBEC23DF9E4400D45FE4 /* RemoteJargonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEB23DF9E4400D45FE4 /* RemoteJargonRepository.swift */; };
-		AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */; };
-		AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */; };
-		AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF123E097CB00D45FE4 /* HTTPError.swift */; };
-		AE87FC1823E0D0C800D45FE4 /* FakeURLProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */; };
-		AE87FC1923E0D0C800D45FE4 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = AE3C146823DF4F4F0066FE31;
 			remoteInfo = TexasJargonGenerator;
+		};
+		AE587C8223E4E55C00C7ED83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3C146123DF4F4F0066FE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE587C7723E4E55C00C7ED83;
+			remoteInfo = JargonRepositories;
+		};
+		AE587C8423E4E55C00C7ED83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3C146123DF4F4F0066FE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3C146823DF4F4F0066FE31;
+			remoteInfo = TexasJargonGenerator;
+		};
+		AE587C8B23E4E55C00C7ED83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3C146123DF4F4F0066FE31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE587C7723E4E55C00C7ED83;
+			remoteInfo = JargonRepositories;
 		};
 		AE8336A123E48CC700E4B0B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -86,6 +112,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AE8336AD23E48CC700E4B0B0 /* RandomJargon.framework in Embed Frameworks */,
+				AE587C8E23E4E55C00C7ED83 /* JargonRepositories.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +134,11 @@
 		AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexasJargonGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JargonRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JargonRepositories.h; sourceTree = "<group>"; };
+		AE587C7B23E4E55C00C7ED83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE587C8023E4E55C00C7ED83 /* JargonRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JargonRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE587C8923E4E55C00C7ED83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonViewControllerTests.swift; sourceTree = "<group>"; };
 		AE83362723E232C700E4B0B0 /* JargonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonViewController.swift; sourceTree = "<group>"; };
 		AE83362923E241FA00E4B0B0 /* JargonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JargonRepository.swift; sourceTree = "<group>"; };
@@ -119,8 +151,8 @@
 		AE83369F23E48CC700E4B0B0 /* RandomJargonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomJargonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8336A623E48CC700E4B0B0 /* RandomJargonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJargonTests.swift; sourceTree = "<group>"; };
 		AE8336A823E48CC700E4B0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE8336B723E48D6300E4B0B0 /* random_jargon_generator_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random_jargon_generator_library.h; path = "../../../../common/random-jargon-generator/src/random_jargon_generator_library.h"; sourceTree = "<group>"; };
-		AE8336B823E48D6300E4B0B0 /* random_jargon_generator_library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random_jargon_generator_library.cpp; path = "../../../../common/random-jargon-generator/src/random_jargon_generator_library.cpp"; sourceTree = "<group>"; };
+		AE8336B723E48D6300E4B0B0 /* random_jargon_generator_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random_jargon_generator_library.h; path = "../../../../../common/random-jargon-generator/src/random_jargon_generator_library.h"; sourceTree = "<group>"; };
+		AE8336B823E48D6300E4B0B0 /* random_jargon_generator_library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random_jargon_generator_library.cpp; path = "../../../../../common/random-jargon-generator/src/random_jargon_generator_library.cpp"; sourceTree = "<group>"; };
 		AE8336BB23E48D9000E4B0B0 /* RandomJargonGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RandomJargonGenerator.mm; sourceTree = "<group>"; };
 		AE8336BC23E48D9000E4B0B0 /* RandomJargonGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomJargonGenerator.h; sourceTree = "<group>"; };
 		AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJargonRepositoryTests.swift; sourceTree = "<group>"; };
@@ -139,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8336AC23E48CC700E4B0B0 /* RandomJargon.framework in Frameworks */,
+				AE587C8D23E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +186,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE587C7523E4E55C00C7ED83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE587C9F23E4E6CB00C7ED83 /* RandomJargon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE587C7D23E4E55C00C7ED83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE587C8123E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,11 +226,9 @@
 		AE3C146023DF4F4F0066FE31 = {
 			isa = PBXGroup;
 			children = (
-				AE3C146B23DF4F4F0066FE31 /* TexasJargonGenerator */,
-				AE3C148523DF4F500066FE31 /* TexasJargonGeneratorTests */,
-				AE3C149023DF4F500066FE31 /* TexasJargonGeneratorUITests */,
-				AE83369823E48CC700E4B0B0 /* RandomJargon */,
-				AE8336A523E48CC700E4B0B0 /* RandomJargonTests */,
+				AE98A06A23E4E87400220907 /* TexasJargonGeneratorLayer */,
+				AE98A06923E4E86100220907 /* RandomJargonLayer */,
+				AE98A06823E4E83800220907 /* JargonRepositoriesLayer */,
 				AE3C146A23DF4F4F0066FE31 /* Products */,
 				AE87FC1523E0CAEB00D45FE4 /* Frameworks */,
 			);
@@ -195,6 +242,8 @@
 				AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */,
 				AE83369723E48CC700E4B0B0 /* RandomJargon.framework */,
 				AE83369F23E48CC700E4B0B0 /* RandomJargonTests.xctest */,
+				AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */,
+				AE587C8023E4E55C00C7ED83 /* JargonRepositoriesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,11 +259,6 @@
 				AE3C147D23DF4F500066FE31 /* Info.plist */,
 				AE3C147023DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld */,
 				AE3C147723DF4F500066FE31 /* Preview Content */,
-				AE87FBEB23DF9E4400D45FE4 /* RemoteJargonRepository.swift */,
-				AE83362923E241FA00E4B0B0 /* JargonRepository.swift */,
-				AE8336C123E4B14700E4B0B0 /* LocalJargonRepository.swift */,
-				AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */,
-				AE87FBF123E097CB00D45FE4 /* HTTPError.swift */,
 				AE83362723E232C700E4B0B0 /* JargonViewController.swift */,
 				AE83362B23E2427300E4B0B0 /* JargonView.swift */,
 				AE83362D23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift */,
@@ -234,12 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				AE3C148823DF4F500066FE31 /* Info.plist */,
-				AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */,
-				AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */,
-				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */,
-				AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */,
-				AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */,
 				AE83362F23E369C800E4B0B0 /* StubJargonRepository.swift */,
+				AE83362523E22FA400E4B0B0 /* JargonViewControllerTests.swift */,
 			);
 			path = TexasJargonGeneratorTests;
 			sourceTree = "<group>";
@@ -251,6 +291,32 @@
 				AE3C149323DF4F500066FE31 /* Info.plist */,
 			);
 			path = TexasJargonGeneratorUITests;
+			sourceTree = "<group>";
+		};
+		AE587C7923E4E55C00C7ED83 /* JargonRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				AE87FBEB23DF9E4400D45FE4 /* RemoteJargonRepository.swift */,
+				AE83362923E241FA00E4B0B0 /* JargonRepository.swift */,
+				AE8336C123E4B14700E4B0B0 /* LocalJargonRepository.swift */,
+				AE87FBEF23DFA2B100D45FE4 /* Jargon.swift */,
+				AE87FBF123E097CB00D45FE4 /* HTTPError.swift */,
+				AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */,
+				AE587C7B23E4E55C00C7ED83 /* Info.plist */,
+			);
+			path = JargonRepositories;
+			sourceTree = "<group>";
+		};
+		AE587C8623E4E55C00C7ED83 /* JargonRepositoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE87FBF323E09B1500D45FE4 /* FakeURLProtocol.swift */,
+				AE87FBF523E0C0E800D45FE4 /* FakeURLProtocolTests.swift */,
+				AE87FBED23DF9E5F00D45FE4 /* JargonRepositoryTests.swift */,
+				AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */,
+				AE587C8923E4E55C00C7ED83 /* Info.plist */,
+			);
+			path = JargonRepositoriesTests;
 			sourceTree = "<group>";
 		};
 		AE83369823E48CC700E4B0B0 /* RandomJargon */ = {
@@ -298,9 +364,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE98A06823E4E83800220907 /* JargonRepositoriesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE587C7923E4E55C00C7ED83 /* JargonRepositories */,
+				AE587C8623E4E55C00C7ED83 /* JargonRepositoriesTests */,
+			);
+			path = JargonRepositoriesLayer;
+			sourceTree = "<group>";
+		};
+		AE98A06923E4E86100220907 /* RandomJargonLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE83369823E48CC700E4B0B0 /* RandomJargon */,
+				AE8336A523E48CC700E4B0B0 /* RandomJargonTests */,
+			);
+			path = RandomJargonLayer;
+			sourceTree = "<group>";
+		};
+		AE98A06A23E4E87400220907 /* TexasJargonGeneratorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AE3C146B23DF4F4F0066FE31 /* TexasJargonGenerator */,
+				AE3C148523DF4F500066FE31 /* TexasJargonGeneratorTests */,
+				AE3C149023DF4F500066FE31 /* TexasJargonGeneratorUITests */,
+			);
+			path = TexasJargonGeneratorLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		AE587C7323E4E55C00C7ED83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE587C8A23E4E55C00C7ED83 /* JargonRepositories.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE83369223E48CC700E4B0B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +429,7 @@
 			);
 			dependencies = (
 				AE8336AB23E48CC700E4B0B0 /* PBXTargetDependency */,
+				AE587C8C23E4E55C00C7ED83 /* PBXTargetDependency */,
 			);
 			name = TexasJargonGenerator;
 			productName = TexasJargonGenerator;
@@ -368,6 +471,43 @@
 			productName = TexasJargonGeneratorUITests;
 			productReference = AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AE587C7723E4E55C00C7ED83 /* JargonRepositories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE587C9323E4E55C00C7ED83 /* Build configuration list for PBXNativeTarget "JargonRepositories" */;
+			buildPhases = (
+				AE587C7323E4E55C00C7ED83 /* Headers */,
+				AE587C7423E4E55C00C7ED83 /* Sources */,
+				AE587C7523E4E55C00C7ED83 /* Frameworks */,
+				AE587C7623E4E55C00C7ED83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JargonRepositories;
+			productName = JargonRepositories;
+			productReference = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE587C7F23E4E55C00C7ED83 /* JargonRepositoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE587C9423E4E55C00C7ED83 /* Build configuration list for PBXNativeTarget "JargonRepositoriesTests" */;
+			buildPhases = (
+				AE587C7C23E4E55C00C7ED83 /* Sources */,
+				AE587C7D23E4E55C00C7ED83 /* Frameworks */,
+				AE587C7E23E4E55C00C7ED83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE587C8323E4E55C00C7ED83 /* PBXTargetDependency */,
+				AE587C8523E4E55C00C7ED83 /* PBXTargetDependency */,
+			);
+			name = JargonRepositoriesTests;
+			productName = JargonRepositoriesTests;
+			productReference = AE587C8023E4E55C00C7ED83 /* JargonRepositoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AE83369623E48CC700E4B0B0 /* RandomJargon */ = {
 			isa = PBXNativeTarget;
@@ -427,6 +567,13 @@
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = AE3C146823DF4F4F0066FE31;
 					};
+					AE587C7723E4E55C00C7ED83 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					AE587C7F23E4E55C00C7ED83 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = AE3C146823DF4F4F0066FE31;
+					};
 					AE83369623E48CC700E4B0B0 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -454,6 +601,8 @@
 				AE3C148C23DF4F500066FE31 /* TexasJargonGeneratorUITests */,
 				AE83369623E48CC700E4B0B0 /* RandomJargon */,
 				AE83369E23E48CC700E4B0B0 /* RandomJargonTests */,
+				AE587C7723E4E55C00C7ED83 /* JargonRepositories */,
+				AE587C7F23E4E55C00C7ED83 /* JargonRepositoriesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -483,6 +632,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE587C7623E4E55C00C7ED83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE587C7E23E4E55C00C7ED83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE83369523E48CC700E4B0B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,15 +668,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */,
-				AE87FBF023DFA2B100D45FE4 /* Jargon.swift in Sources */,
-				AE8336C223E4B14700E4B0B0 /* LocalJargonRepository.swift in Sources */,
 				AE83362E23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift in Sources */,
 				AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */,
-				AE87FBF223E097CB00D45FE4 /* HTTPError.swift in Sources */,
 				AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */,
 				AE83362823E232C700E4B0B0 /* JargonViewController.swift in Sources */,
-				AE83362A23E241FA00E4B0B0 /* JargonRepository.swift in Sources */,
-				AE87FBEC23DF9E4400D45FE4 /* RemoteJargonRepository.swift in Sources */,
 				AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */,
 				AE83362C23E2427300E4B0B0 /* JargonView.swift in Sources */,
 			);
@@ -523,12 +681,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE87FC1823E0D0C800D45FE4 /* FakeURLProtocolTests.swift in Sources */,
-				AE83363023E369C800E4B0B0 /* StubJargonRepository.swift in Sources */,
-				AE8336C023E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift in Sources */,
+				AE587CA023E4E76B00C7ED83 /* StubJargonRepository.swift in Sources */,
 				AE83362623E22FA400E4B0B0 /* JargonViewControllerTests.swift in Sources */,
-				AE87FC1923E0D0C800D45FE4 /* FakeURLProtocol.swift in Sources */,
-				AE87FBEE23DF9E5F00D45FE4 /* JargonRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +691,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE587C7423E4E55C00C7ED83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE587C9723E4E59100C7ED83 /* JargonRepository.swift in Sources */,
+				AE587C9623E4E59100C7ED83 /* Jargon.swift in Sources */,
+				AE587C9823E4E59100C7ED83 /* LocalJargonRepository.swift in Sources */,
+				AE587C9923E4E59100C7ED83 /* HTTPError.swift in Sources */,
+				AE587C9523E4E59100C7ED83 /* RemoteJargonRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE587C7C23E4E55C00C7ED83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE587C9B23E4E5A400C7ED83 /* FakeURLProtocolTests.swift in Sources */,
+				AE587C9E23E4E5A400C7ED83 /* LocalJargonRepositoryTests.swift in Sources */,
+				AE587C9D23E4E5A400C7ED83 /* FakeURLProtocol.swift in Sources */,
+				AE587C9C23E4E5A400C7ED83 /* JargonRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +746,21 @@
 			isa = PBXTargetDependency;
 			target = AE3C146823DF4F4F0066FE31 /* TexasJargonGenerator */;
 			targetProxy = AE3C148E23DF4F500066FE31 /* PBXContainerItemProxy */;
+		};
+		AE587C8323E4E55C00C7ED83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE587C7723E4E55C00C7ED83 /* JargonRepositories */;
+			targetProxy = AE587C8223E4E55C00C7ED83 /* PBXContainerItemProxy */;
+		};
+		AE587C8523E4E55C00C7ED83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE3C146823DF4F4F0066FE31 /* TexasJargonGenerator */;
+			targetProxy = AE587C8423E4E55C00C7ED83 /* PBXContainerItemProxy */;
+		};
+		AE587C8C23E4E55C00C7ED83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE587C7723E4E55C00C7ED83 /* JargonRepositories */;
+			targetProxy = AE587C8B23E4E55C00C7ED83 /* PBXContainerItemProxy */;
 		};
 		AE8336A223E48CC700E4B0B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -716,13 +908,14 @@
 		AE3C149723DF4F500066FE31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGenerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGeneratorLayer/TexasJargonGenerator/Preview Content\"";
 				DEVELOPMENT_TEAM = V74M9VAFV7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TexasJargonGenerator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGenerator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -737,13 +930,14 @@
 		AE3C149823DF4F500066FE31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGenerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGeneratorLayer/TexasJargonGenerator/Preview Content\"";
 				DEVELOPMENT_TEAM = V74M9VAFV7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = TexasJargonGenerator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGenerator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -761,7 +955,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TexasJargonGeneratorTests/Info.plist;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -782,7 +977,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TexasJargonGeneratorTests/Info.plist;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,7 +998,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TexasJargonGeneratorUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,7 +1017,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TexasJargonGeneratorUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -835,7 +1031,7 @@
 			};
 			name = Release;
 		};
-		AE8336AF23E48CC700E4B0B0 /* Debug */ = {
+		AE587C8F23E4E55C00C7ED83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -846,7 +1042,105 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RandomJargon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositories/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JargonRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE587C9023E4E55C00C7ED83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositories/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JargonRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE587C9123E4E55C00C7ED83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositoriesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JargonRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TexasJargonGenerator.app/TexasJargonGenerator";
+			};
+			name = Debug;
+		};
+		AE587C9223E4E55C00C7ED83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositoriesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JargonRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TexasJargonGenerator.app/TexasJargonGenerator";
+			};
+			name = Release;
+		};
+		AE8336AF23E48CC700E4B0B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V74M9VAFV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -866,7 +1160,7 @@
 		AE8336B023E48CC700E4B0B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -874,7 +1168,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RandomJargon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -898,7 +1192,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = RandomJargonTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargonTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -919,7 +1213,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = RandomJargonTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargonTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -968,6 +1262,24 @@
 			buildConfigurations = (
 				AE3C149D23DF4F500066FE31 /* Debug */,
 				AE3C149E23DF4F500066FE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE587C9323E4E55C00C7ED83 /* Build configuration list for PBXNativeTarget "JargonRepositories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE587C8F23E4E55C00C7ED83 /* Debug */,
+				AE587C9023E4E55C00C7ED83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE587C9423E4E55C00C7ED83 /* Build configuration list for PBXNativeTarget "JargonRepositoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE587C9123E4E55C00C7ED83 /* Debug */,
+				AE587C9223E4E55C00C7ED83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

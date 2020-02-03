@@ -1,11 +1,11 @@
 import Combine
 import Foundation
 
-struct RemoteJargonRepository: JargonRepository {
+public struct RemoteJargonRepository: JargonRepository {
     let urlSession: URLSession
     let baseUrl: String
 
-    init(
+    public init(
         urlSession: URLSession = URLSession.shared,
         baseUrl: String = "http://127.0.0.1:8080"
     ) {
@@ -13,7 +13,7 @@ struct RemoteJargonRepository: JargonRepository {
         self.baseUrl = baseUrl
     }
 
-    func fetchJargon() -> AnyPublisher<Jargon, Error> {
+    public func fetchJargon() -> AnyPublisher<Jargon, Error> {
         let url = URL(string: "\(baseUrl)/jargon")!
         return urlSession.dataTaskPublisher(for: url)
             .tryMap { data, response -> Data in

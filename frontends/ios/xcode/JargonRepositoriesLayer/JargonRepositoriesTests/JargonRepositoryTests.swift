@@ -1,7 +1,7 @@
 import Combine
 import XCTest
 
-@testable import TexasJargonGenerator
+@testable import JargonRepositories
 
 class JargonRepositoryTests: XCTestCase {
     var subscriberSet: Set<AnyCancellable>?

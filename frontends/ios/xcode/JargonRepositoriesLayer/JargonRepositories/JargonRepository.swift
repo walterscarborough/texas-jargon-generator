@@ -1,6 +1,6 @@
 import Combine
 import Foundation
 
-protocol JargonRepository {
+public protocol JargonRepository {
     func fetchJargon() -> AnyPublisher<Jargon, Error>
 }

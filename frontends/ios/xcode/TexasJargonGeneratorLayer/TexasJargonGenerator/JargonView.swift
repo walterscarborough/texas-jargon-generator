@@ -1,3 +1,4 @@
+import JargonRepositories
 import UIKit
 
 class JargonView: UIView {

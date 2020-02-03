@@ -2,8 +2,10 @@ import Combine
 import Foundation
 import RandomJargon
 
-class LocalJargonRepository: JargonRepository {
-    func fetchJargon() -> AnyPublisher<Jargon, Error> {
+public class LocalJargonRepository: JargonRepository {
+    public init() {}
+
+    public func fetchJargon() -> AnyPublisher<Jargon, Error> {
         return Future<Jargon, Error> { promise in
             let randomPhrase = RandomJargonGenerator.generatePhrase()
 

@@ -1,5 +1,5 @@
 import Foundation
 
-enum HTTPError: Error {
+public enum HTTPError: Error {
     case non200Response
 }
