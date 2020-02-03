@@ -147,3 +147,5 @@ fabric.properties
 # Markdown Navigator plugin
 
 # End of https://www.gitignore.io/api/intellij,jetbrains
+
+.DS_Store

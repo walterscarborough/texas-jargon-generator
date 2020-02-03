@@ -13,25 +13,30 @@ function go_to_top_project_directory() {
   cd "$script_dir/.."
 }
 
-function run_all_linters_and_tests() {
-  ./scripts/run-linters-and-tests.sh
+function run_random_jargon_generator_ship_it() {
+  ./common/random-jargon-generator/scripts/ship-it.sh
 }
 
-function push_code() {
-  git push
+function run_ios_ship_it() {
+  ./frontends/ios/scripts/ship-it.sh
+}
+
+function run_top_level_bash_linter() {
+    shellcheck scripts/*.sh
 }
 
 function display_success_message() {
   local -r green_color_code='\033[1;32m'
   local -r default_color_code='\033[00m'
-  echo -e "${green_color_code}\\nProject Ship-it ran successfully 🚀 ${default_color_code} \\n"
+  echo -e "${green_color_code}\\nAll tests ran successfully 🧪 ${default_color_code} \\n"
 }
 
 function main() {
   set_bash_error_handling
   go_to_top_project_directory
-  run_all_linters_and_tests
-  push_code
+  run_top_level_bash_linter
+  run_random_jargon_generator_ship_it
+  run_ios_ship_it
   display_success_message
 }
 
