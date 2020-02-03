@@ -14,6 +14,14 @@ function go_to_project_cplusplus_directory() {
 }
 
 function install_missing_brew_dependencies() {
+  if [[ -f /usr/local/bin/clang-tidy ]]; then
+    unlink /usr/local/bin/clang-tidy
+  fi
+
+  if [[ -f /usr/local/bin/clang-format ]]; then
+    unlink /usr/local/bin/clang-format
+  fi
+
   brew install conan llvm
 
   ln -s "$(brew --prefix llvm)/bin/clang-tidy" "/usr/local/bin/clang-tidy"
@@ -28,7 +36,7 @@ function install_missing_conan_dependencies() {
 function display_success_message() {
   local -r green_color_code='\033[1;32m'
   local -r default_color_code='\033[00m'
-  echo -e "${green_color_code}\\nDependencies installed successfully 💾 ${default_color_code} \\n"
+  echo -e "${green_color_code}\\nCommon dependencies installed successfully 💾 ${default_color_code} \\n"
 }
 
 function main() {

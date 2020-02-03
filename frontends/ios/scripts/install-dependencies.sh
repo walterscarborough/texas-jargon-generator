@@ -28,7 +28,7 @@ function install_missing_ruby_dependencies() {
 function display_success_message() {
   local -r green_color_code='\033[1;32m'
   local -r default_color_code='\033[00m'
-  echo -e "${green_color_code}\\nDependencies installed successfully 💾 ${default_color_code} \\n"
+  echo -e "${green_color_code}\\niOS Dependencies installed successfully 💾 ${default_color_code} \\n"
 }
 
 function main() {
