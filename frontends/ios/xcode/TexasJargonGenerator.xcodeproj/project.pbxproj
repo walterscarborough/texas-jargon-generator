@@ -151,8 +151,8 @@
 		AE83369F23E48CC700E4B0B0 /* RandomJargonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomJargonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8336A623E48CC700E4B0B0 /* RandomJargonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJargonTests.swift; sourceTree = "<group>"; };
 		AE8336A823E48CC700E4B0B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE8336B723E48D6300E4B0B0 /* random_jargon_generator_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random_jargon_generator_library.h; path = "../../../../../common/random-jargon-generator/src/random_jargon_generator_library.h"; sourceTree = "<group>"; };
-		AE8336B823E48D6300E4B0B0 /* random_jargon_generator_library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random_jargon_generator_library.cpp; path = "../../../../../common/random-jargon-generator/src/random_jargon_generator_library.cpp"; sourceTree = "<group>"; };
+		AE8336B723E48D6300E4B0B0 /* random_jargon_generator_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random_jargon_generator_library.h; path = "../../../../../../common/random-jargon-generator/src/random_jargon_generator_library.h"; sourceTree = "<group>"; };
+		AE8336B823E48D6300E4B0B0 /* random_jargon_generator_library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random_jargon_generator_library.cpp; path = "../../../../../../common/random-jargon-generator/src/random_jargon_generator_library.cpp"; sourceTree = "<group>"; };
 		AE8336BB23E48D9000E4B0B0 /* RandomJargonGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RandomJargonGenerator.mm; sourceTree = "<group>"; };
 		AE8336BC23E48D9000E4B0B0 /* RandomJargonGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomJargonGenerator.h; sourceTree = "<group>"; };
 		AE8336BF23E4B02100E4B0B0 /* LocalJargonRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJargonRepositoryTests.swift; sourceTree = "<group>"; };
@@ -226,11 +226,10 @@
 		AE3C146023DF4F4F0066FE31 = {
 			isa = PBXGroup;
 			children = (
-				AE98A06A23E4E87400220907 /* TexasJargonGeneratorLayer */,
-				AE98A06923E4E86100220907 /* RandomJargonLayer */,
-				AE98A06823E4E83800220907 /* JargonRepositoriesLayer */,
-				AE3C146A23DF4F4F0066FE31 /* Products */,
+				AE98A06A23E4E87400220907 /* App */,
+				AE8D195523E8750A00CA4EF1 /* Components */,
 				AE87FC1523E0CAEB00D45FE4 /* Frameworks */,
+				AE3C146A23DF4F4F0066FE31 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -364,32 +363,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AE98A06823E4E83800220907 /* JargonRepositoriesLayer */ = {
+		AE8D195523E8750A00CA4EF1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE98A06823E4E83800220907 /* JargonRepositoriesComponent */,
+				AE98A06923E4E86100220907 /* RandomJargonComponent */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AE98A06823E4E83800220907 /* JargonRepositoriesComponent */ = {
 			isa = PBXGroup;
 			children = (
 				AE587C7923E4E55C00C7ED83 /* JargonRepositories */,
 				AE587C8623E4E55C00C7ED83 /* JargonRepositoriesTests */,
 			);
-			path = JargonRepositoriesLayer;
+			path = JargonRepositoriesComponent;
 			sourceTree = "<group>";
 		};
-		AE98A06923E4E86100220907 /* RandomJargonLayer */ = {
+		AE98A06923E4E86100220907 /* RandomJargonComponent */ = {
 			isa = PBXGroup;
 			children = (
 				AE83369823E48CC700E4B0B0 /* RandomJargon */,
 				AE8336A523E48CC700E4B0B0 /* RandomJargonTests */,
 			);
-			path = RandomJargonLayer;
+			path = RandomJargonComponent;
 			sourceTree = "<group>";
 		};
-		AE98A06A23E4E87400220907 /* TexasJargonGeneratorLayer */ = {
+		AE98A06A23E4E87400220907 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				AE3C146B23DF4F4F0066FE31 /* TexasJargonGenerator */,
 				AE3C148523DF4F500066FE31 /* TexasJargonGeneratorTests */,
 				AE3C149023DF4F500066FE31 /* TexasJargonGeneratorUITests */,
 			);
-			path = TexasJargonGeneratorLayer;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -912,10 +920,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGeneratorLayer/TexasJargonGenerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/App/TexasJargonGenerator/Preview Content\"";
 				DEVELOPMENT_TEAM = V74M9VAFV7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGenerator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGenerator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -934,10 +942,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TexasJargonGeneratorLayer/TexasJargonGenerator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/App/TexasJargonGenerator/Preview Content\"";
 				DEVELOPMENT_TEAM = V74M9VAFV7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGenerator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGenerator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -956,7 +964,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGeneratorTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -978,7 +986,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGeneratorTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -998,7 +1006,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorUITests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGeneratorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1017,7 +1025,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/TexasJargonGeneratorLayer/TexasJargonGeneratorUITests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/TexasJargonGeneratorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1042,7 +1050,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositories/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/JargonRepositoriesComponent/JargonRepositories/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1070,7 +1078,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositories/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/JargonRepositoriesComponent/JargonRepositories/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1094,7 +1102,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositoriesTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/JargonRepositoriesComponent/JargonRepositoriesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1115,7 +1123,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/JargonRepositoriesLayer/JargonRepositoriesTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/JargonRepositoriesComponent/JargonRepositoriesTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1140,7 +1148,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/RandomJargonComponent/RandomJargon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1168,7 +1176,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargon/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/RandomJargonComponent/RandomJargon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1192,7 +1200,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargonTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/RandomJargonComponent/RandomJargonTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1213,7 +1221,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V74M9VAFV7;
-				INFOPLIST_FILE = "$(SRCROOT)/RandomJargonLayer/RandomJargonTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Components/RandomJargonComponent/RandomJargonTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
