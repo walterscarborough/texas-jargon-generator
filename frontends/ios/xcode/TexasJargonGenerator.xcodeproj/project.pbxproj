@@ -15,6 +15,8 @@
 		AE3C147923DF4F500066FE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147823DF4F500066FE31 /* Preview Assets.xcassets */; };
 		AE3C147C23DF4F500066FE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */; };
 		AE3C149223DF4F500066FE31 /* TexasJargonGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */; };
+		AE50381A23EA1F4F00F2E7F9 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50381923EA1F4F00F2E7F9 /* AutoEquatable.swift */; };
+		AE50381F23EA28F100F2E7F9 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50381E23EA28F100F2E7F9 /* AutoEquatable.generated.swift */; };
 		AE587C8123E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */; };
 		AE587C8A23E4E55C00C7ED83 /* JargonRepositories.h in Headers */ = {isa = PBXBuildFile; fileRef = AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE587C8D23E4E55C00C7ED83 /* JargonRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */; };
@@ -134,6 +136,8 @@
 		AE3C148D23DF4F500066FE31 /* TexasJargonGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexasJargonGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C149123DF4F500066FE31 /* TexasJargonGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexasJargonGeneratorUITests.swift; sourceTree = "<group>"; };
 		AE3C149323DF4F500066FE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE50381923EA1F4F00F2E7F9 /* AutoEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.swift; sourceTree = "<group>"; };
+		AE50381E23EA28F100F2E7F9 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		AE587C7823E4E55C00C7ED83 /* JargonRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JargonRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JargonRepositories.h; sourceTree = "<group>"; };
 		AE587C7B23E4E55C00C7ED83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -292,9 +296,18 @@
 			path = TexasJargonGeneratorUITests;
 			sourceTree = "<group>";
 		};
+		AE50381D23EA28CE00F2E7F9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				AE50381E23EA28F100F2E7F9 /* AutoEquatable.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		AE587C7923E4E55C00C7ED83 /* JargonRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				AE50381D23EA28CE00F2E7F9 /* Generated */,
 				AE87FBEB23DF9E4400D45FE4 /* RemoteJargonRepository.swift */,
 				AE83362923E241FA00E4B0B0 /* JargonRepository.swift */,
 				AE8336C123E4B14700E4B0B0 /* LocalJargonRepository.swift */,
@@ -302,6 +315,7 @@
 				AE87FBF123E097CB00D45FE4 /* HTTPError.swift */,
 				AE587C7A23E4E55C00C7ED83 /* JargonRepositories.h */,
 				AE587C7B23E4E55C00C7ED83 /* Info.plist */,
+				AE50381923EA1F4F00F2E7F9 /* AutoEquatable.swift */,
 			);
 			path = JargonRepositories;
 			sourceTree = "<group>";
@@ -709,7 +723,9 @@
 				AE587C9723E4E59100C7ED83 /* JargonRepository.swift in Sources */,
 				AE587C9623E4E59100C7ED83 /* Jargon.swift in Sources */,
 				AE587C9823E4E59100C7ED83 /* LocalJargonRepository.swift in Sources */,
+				AE50381A23EA1F4F00F2E7F9 /* AutoEquatable.swift in Sources */,
 				AE587C9923E4E59100C7ED83 /* HTTPError.swift in Sources */,
+				AE50381F23EA28F100F2E7F9 /* AutoEquatable.generated.swift in Sources */,
 				AE587C9523E4E59100C7ED83 /* RemoteJargonRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

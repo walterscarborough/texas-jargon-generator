@@ -1,0 +1,5 @@
+sources:
+    - Components/JargonRepositoriesComponent/JargonRepositories
+templates:
+    - Templates
+output: Components/JargonRepositoriesComponent/JargonRepositories/Generated
