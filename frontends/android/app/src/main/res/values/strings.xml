@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Texas Jargon Generator</string>
+    <string name="get_a_phrase">Get a Phrase!</string>
 </resources>
