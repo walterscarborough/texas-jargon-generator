@@ -1,8 +1,9 @@
 #include "random_jargon_generator_library.h"
 
 #include <vector>
+#include <random>
 
-auto generate_phrase() -> std::string {
+extern "C" auto generate_phrase() -> const char* {
   std::vector<std::string> phrases;
 
   phrases.emplace_back("gosh");
@@ -17,7 +18,12 @@ auto generate_phrase() -> std::string {
   phrases.emplace_back("meaner than a two-dollar rattlesnake");
   phrases.emplace_back("howdy");
 
-  int randomNumber = arc4random_uniform((int)phrases.size());
+  std::random_device dev;
+  std::mt19937 rng(dev());
+  std::uniform_int_distribution<std::mt19937::result_type> randomNumberGenerator(0, (int)phrases.size() - 1);
+  int randomNumber = randomNumberGenerator(rng);
 
-  return phrases.at(randomNumber);
+  std::string phrase = phrases.at(randomNumber);
+
+  return phrase.c_str();
 }
