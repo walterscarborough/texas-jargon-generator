@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Emscripten-Generated Code</title>
+  </head>
+  <body>
+
+    <div id="message"></div>
+    <script type='text/javascript' src='random-jargon-generator.js'></script>
+    <script type='text/javascript'>
+      const callback = function(){
+        RandomJargonGeneratorModule().then((Module) => {
+          const wrappedGeneratePhrase = Module.cwrap('generate_phrase', 'string');
+          const phrase = wrappedGeneratePhrase();
+
+          const messageElement = document.querySelector('#message');
+          messageElement.textContent = phrase;
+        });
+      };
+
+      if (
+          document.readyState === "complete" ||
+          (document.readyState !== "loading" && !document.documentElement.doScroll)
+      ) {
+        callback();
+      } else {
+        document.addEventListener("DOMContentLoaded", callback);
+      }
+    </script>
+  </body>
+</html>
+
+
