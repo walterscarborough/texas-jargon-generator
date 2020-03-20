@@ -25,5 +25,8 @@ extern "C" auto generate_phrase() -> const char* {
 
   std::string phrase = phrases.at(randomNumber);
 
-  return phrase.c_str();
+  char* convertedPhrase = new char [phrase.length() + 1];
+  std::strcpy(convertedPhrase, phrase.c_str());
+
+  return convertedPhrase;
 }
