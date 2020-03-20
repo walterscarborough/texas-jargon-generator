@@ -21,6 +21,10 @@ function install_ios_dependencies() {
   ./frontends/ios/scripts/install-dependencies.sh
 }
 
+function install_web_dependencies() {
+  ./frontends/web/scripts/install-dependencies.sh
+}
+
 function install_wiremock() {
   pushd contracts
     if [[ ! -f wiremock-standalone.jar ]]; then
@@ -41,6 +45,7 @@ function main() {
   go_to_top_project_directory
   install_common_dependencies
   install_ios_dependencies
+  install_web_dependencies
   install_wiremock
   display_success_message
 }
