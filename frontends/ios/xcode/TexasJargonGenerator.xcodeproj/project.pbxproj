@@ -10,7 +10,6 @@
 		AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C146C23DF4F4F0066FE31 /* AppDelegate.swift */; };
 		AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C146E23DF4F4F0066FE31 /* SceneDelegate.swift */; };
 		AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE3C147023DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld */; };
-		AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C147323DF4F4F0066FE31 /* ContentView.swift */; };
 		AE3C147623DF4F500066FE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147523DF4F500066FE31 /* Assets.xcassets */; };
 		AE3C147923DF4F500066FE31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147823DF4F500066FE31 /* Preview Assets.xcassets */; };
 		AE3C147C23DF4F500066FE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */; };
@@ -126,7 +125,6 @@
 		AE3C146C23DF4F4F0066FE31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE3C146E23DF4F4F0066FE31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AE3C147123DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TexasJargonGenerator.xcdatamodel; sourceTree = "<group>"; };
-		AE3C147323DF4F4F0066FE31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE3C147523DF4F500066FE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE3C147823DF4F500066FE31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE3C147B23DF4F500066FE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 			children = (
 				AE3C146C23DF4F4F0066FE31 /* AppDelegate.swift */,
 				AE3C146E23DF4F4F0066FE31 /* SceneDelegate.swift */,
-				AE3C147323DF4F4F0066FE31 /* ContentView.swift */,
 				AE3C147523DF4F500066FE31 /* Assets.xcassets */,
 				AE3C147A23DF4F500066FE31 /* LaunchScreen.storyboard */,
 				AE3C147D23DF4F500066FE31 /* Info.plist */,
@@ -692,7 +689,6 @@
 				AE3C146D23DF4F4F0066FE31 /* AppDelegate.swift in Sources */,
 				AE83362E23E245C600E4B0B0 /* NSLayoutConstraint+TranslatesAutoresizingMask.swift in Sources */,
 				AE3C147223DF4F4F0066FE31 /* TexasJargonGenerator.xcdatamodeld in Sources */,
-				AE3C147423DF4F4F0066FE31 /* ContentView.swift in Sources */,
 				AE83362823E232C700E4B0B0 /* JargonViewController.swift in Sources */,
 				AE3C146F23DF4F4F0066FE31 /* SceneDelegate.swift in Sources */,
 				AE83362C23E2427300E4B0B0 /* JargonView.swift in Sources */,

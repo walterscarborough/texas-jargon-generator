@@ -30,7 +30,7 @@ class JargonView: UIView {
         addSubview(phraseStack)
 
         phraseStack.addArrangedSubview(phraseLabel)
-        phraseStack.addArrangedSubview(remotePhraseButton)
+//        phraseStack.addArrangedSubview(remotePhraseButton)
         phraseStack.addArrangedSubview(localPhraseButton)
     }
 
@@ -45,15 +45,15 @@ class JargonView: UIView {
         phraseStack.distribution = .fillEqually
 
         remotePhraseButton.backgroundColor = UIColor.red
-        localPhraseButton.backgroundColor = UIColor.purple
-        phraseLabel.backgroundColor = UIColor.green
-        phraseStack.layer.backgroundColor = UIColor.blue.cgColor
+        localPhraseButton.backgroundColor = UIColor.blue
+        localPhraseButton.setTitleColor(UIColor.white, for: .normal)
 
-        localPhraseButton.setTitle("Get Local Phrase", for: .normal)
+        localPhraseButton.setTitle("Get Phrase", for: .normal)
         remotePhraseButton.setTitle("Get Remote Phrase", for: .normal)
-        phraseLabel.text = "Yolo!"
+        phraseLabel.text = "..."
+        phraseLabel.textAlignment = .center
 
-        backgroundColor = UIColor.yellow
+        backgroundColor = UIColor.white
     }
 
     private func setupAutolayout() {

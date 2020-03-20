@@ -7,9 +7,9 @@
 
 @implementation RandomJargonGenerator
 + (NSString *) generatePhrase {
-    std::string phrase = generate_phrase();
+    const char* phrase = generate_phrase();
 
-    NSString* convertedPhrase = [[NSString alloc] initWithUTF8String: phrase.c_str()];
+    NSString* convertedPhrase = [[NSString alloc] initWithUTF8String: phrase];
 
     return convertedPhrase;
 }
