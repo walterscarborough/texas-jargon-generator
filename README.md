@@ -38,15 +38,15 @@ Please note that the emscripten configuration for the `web` frontend can be a bi
 
 ## Building Apps
 
-## Building the iOS Client
+### Building the iOS Client
 
 Open up `frontends/ios/xcode/TexasJargonGenerator.xcodeproj` in xcode and build from there.
 
-## Building the Android Client
+### Building the Android Client
 
 Open up `frontends/android` in Android Studio and build from there.
 
-## Building the Web Client
+### Building the Web Client
 
 ```bash
 # Go to the web directory
